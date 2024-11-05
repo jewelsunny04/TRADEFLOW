@@ -1,0 +1,154 @@
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+header {
+    background-color: #155a4c; /* Header background color */
+    padding: 10px 20px;
+    color: white;
+    text-align: left;
+}
+
+.tradeflow-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex; /* Flex layout for sidebar and main content */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height minus header/footer */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #e0f7fa; /* Light cyan background for sidebar */
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Right border for separation */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0; /* Space between menu items */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underline */
+    color: #155a4c; /* Link color */
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #0a3d35; /* Darker shade on hover */
+}
+
+.main-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-left: 20px; /* Add left margin for gap */
+}
+
+.main-content h1 {
+    margin-top: 0;
+    text-align: center; /* Center align the heading text */
+    display: flex;
+    justify-content: center; /* Center flex items if you have any icons */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 30px;
+}
+
+.main-content h1 img{
+    margin-right: 10px;
+
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background: #ffffff; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    width: calc(20% - 20px); /* Adjust width as needed */
+    height: 150px; /* Set a standard height for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.card img {
+    width: 80px; /* Set a maximum width for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below icon */
+}
+
+.logout-button {
+
+    display: inline-block;
+    background-color: yellow; /* Button background color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the button */
+    margin-left: 1000px;
+}
+
+.logout-button:hover {
+    background-color: rgb(251, 255, 35); /* Darker shade on hover */
+    color: black;
+}
+
+footer {
+    background-color: #155a4c; /* Footer background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Responsive for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        border-right: none; /* Remove border */
+    }
+
+    .main-content {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+}

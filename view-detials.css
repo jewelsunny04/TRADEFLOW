@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.details-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.details-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3D8361;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c6b4b;
+}
+.overlay-content img {
+    max-width: 90%; /* Set maximum width to 90% of the overlay */
+    max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: add some border radius */
+    object-fit: contain; /* Ensure the image is contained within the specified dimensions */
+}

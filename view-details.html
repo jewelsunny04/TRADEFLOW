@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view-details.css">
+    <title>Product Details</title>
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="closeOverlay()">
+        <div class="details-content" onclick="event.stopPropagation();">
+            <h1 id="product-name"></h1>
+            <img id="product-image" src="" alt="Product Image">
+            <p id="product-price"></p>
+            <button onclick="closeOverlay()">Close</button>
+        </div>
+    </div>
+
+    <script src="view-details.js"></script>
+</body>
+</html>
