@@ -9,7 +9,7 @@ body {
 
 body::before {
     content: '';
-    background-image: url('a-images/admin-cover.jpg'); /* Set your background image */
+    background-image: url('./a-images/admin-cover.jpg'); /* Set your background image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     position: fixed; /* Position it absolutely */
